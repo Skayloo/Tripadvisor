@@ -6,49 +6,9 @@ from bs4 import BeautifulSoup
 
 
 cookies = {
-    'TADCID': 'A5IY8zPYUe3FC3lCABQCFdpBzzOuRA-9xvCxaMyI12fnA8PULjODmVx_wJj2B4HlL9WN9mPi-DtxwPJ-6T4DpIXArijFD1P0pPA',
-    'TAUnique': '%1%enc%3ACMMOKLDtJ3uT9JiXQNFfymuqYyJlxtntn907NIsEsrgWyJIZOKp%2Fdg%3D%3D',
-    'TASSK': 'enc%3AAFj%2BbV3V1JMCtGYkEPmiBSvy%2FLrTwSiSqz6Fo6DPHBlyZ60deAW6PQxQNCRLcpnOSP1Rr3KW%2BFtL1Bij8D893Me72ykUEsAnKXMEL1JZ3U2dwGJLliOMgbuy0k%2FlV60aRw%3D%3D',
-    'PAC': 'ADlq7RVATVmz2EQFmHPhH55ZhlbGPKh7vHkYYXTAcF6vZywF29ef_T_6ZFcBrWa-VkD2KFyvx9IsxQfolcFztZ5cu7oZPTdb0ExmmCO1wQXm5MJvWPo58Hk2Ax6ZHo0AOIATitRzLJnrqU8Mb5IjIMPN8cttStDdoBMOzsXalHGzsLgPfjibYPAL3lzd8eibjw%3D%3D',
-    'VRMCID': '%1%V1*id.14384*llp.%2F*e.1626554696390',
-    'PMC': 'V2*MS.80*MD.20210710*LD.20210902',
-    'TATrkConsent': 'eyJvdXQiOiIiLCJpbiI6IkFMTCJ9',
-    '_ym_uid': '1625949904263931600',
-    '_ym_d': '1625949904',
-    '_lc2_fpi': 'f4e7d8ca3f73--01fa92n7jgpysxhszxk2qer9gn',
-    '__gads': 'ID=a438d3211cd4bde1:T=1625949906:S=ALNI_MbXK6iV1WccIMQW1HH79nsN224JoA',
-    'TART': '%1%enc%3Ak%2FSYl0DRX8qVg8koWKk8LOWwkFmdb8KlgixFkzQXENJla8j7iowSb9Jt%2BBQrhBMdOnZh7DXbNV0%3D',
-    'TATravelInfo': 'V2*AY.2021*AM.9*AD.12*DY.2021*DM.9*DD.13*A.2*MG.-1*HP.2*FL.3*DSM.1630580452231*RS.1*RY.2021*RM.9*RD.2*RH.20*RG.2',
-    'TAUD': 'LA-1630574761942-1*RDD-1-2021_09_02*ARDD-5691611-2021_09_12.2021_09_13*RD-16418523-2021_09_02.4316033*LD-21434737-2021.9.12.2021.9.13*LG-21434739-2.1.F.',
-    'TAAUTHEAT': 'zyNUfP8a24Gdf5vRABQCab7fMZ8ORguCqJF_E5GxfSe-A5NA18aOOXGaYqcHfxcaw2gufNDmSu7uOKodwT3DzmJW1nSGRN5x_Fk5aB4pKDBWyZVMvD2hsszZP7FirlyRo2fSkrvCCR3Js2-2nrTdLJ0dUXmeqsePpZYkenaPLTf4ILa1piSVkmmDqzGHP0XvlgWrhhlL8_lbz0LlUXyE08g04dsSAE_NyW4',
-    '_pbjs_userid_consent_data': '3524755945110770',
-    'pbjs_pubcommonID': '7fc10c7a-0971-4abc-9ba2-029d03607a22',
-    '_ym_isad': '2',
-    'pbjs_li_nonid': '%7B%7D',
-    'TASession': 'V2ID.7682DE49FA54483787C23F8149E415AB*SQ.15*LS.Restaurants*GR.20*TCPAR.34*TBR.38*EXEX.88*ABTR.5*PHTB.58*FS.84*CPU.13*HS.recommended*ES.popularity*DS.5*SAS.popularity*FPS.oldFirst*TS.BBD0F51D5A43BB44059EDFF76534C5FF*LF.ru*FA.1*DF.0*RT.0*TRA.true*LD.294229*EAU.8',
-    'ServerPool': 'C',
-    'TAReturnTo': '%1%%2FRestaurants-g294229-oa30-Jakarta_Java.html',
-    '__vt': 'tFFJK-l-5pHRjecvABQCIf6-ytF7QiW7ovfhqc-AvRfGCETeVl-0Az8KhX7gtIxjurnQsJuR--lnTMU9mDTePB278K81GjqiU2Xad3sUOmTVrvtBXkmaj-pvz0Wf_sKeIv-9tQVc-ObZ6NbWl8DmR959LLXnJSbsQPiTd-DFSu1U8s79i1uWhJ4ybySP6GEel0D0jmNkcE_9kBSUfMXicDFkNp4DBq5xhfpguGyRVnbPx6W2ClD507sQDjE3rRQaRw',
-    'ak_bmsc': 'ED951E21835C3034FEAF0155BC61D32C~000000000000000000000000000000~YAAQDotIF4biDKZ7AQAAqWfNpgy/xeWs9njvrDwH+C43vMaU2roPNgHKbxjhZ1bZkGACnDww3Ai4NQiIEMmX7uXah6Hty3kZLJKFM3M+bA29ZWYBVT4ggRbdjjfWdbNpaeLty9gTzgWWupUAGqHXOXyXBkA5Um/BHvwcb8vGTjM9boCYJ3mjpHqw7I8vu8iErvir9LTPqlezyZkK/7mtgKhAcJXET99Ea2iSwaVjZs/E4eN5cG82Ikc4zF6SZb+4at3dKmSLit2v4D5n2L+T3lkhY2nPKzWGhUnPUsTJSxdTxNdFVloG8V30vn2kbh7Ml0D/00mcsHDjhq0MrSMqCrvmmzq+S2Av7agOY0+7w8QjN44rZNkLUzG3JgJphFTlQ4OhKBDEmDcpqo1Q1KU=',
-    'bm_sv': 'A289D76399CFBC12CA9B5400D0B793E6~/U7pDDjDRaPLJLuWjqlu26smI5OipBYTa2DrTnXq7nC0xsZPLA67ymOcLcEILZbX0mQaUtG92enBQYHpTR7WZBpY8eJUlM0W900mBXONKBsK/y8WyAZX+0m9HzDa4C+Q3YdaVKattP5Uc8tflBh+v6txDTg9qRMX+/L8/wnqGgg=',
-    '_li_dcdm_c': '.tripadvisor.ru',
-    'CM': '%1%PremiumMobSess%2C%2C-1%7Ct4b-pc%2C%2C-1%7CRestAds%2FRPers%2C%2C-1%7CRCPers%2C%2C-1%7CWShadeSeen%2C%2C-1%7CTheForkMCCPers%2C%2C-1%7CHomeASess%2C%2C-1%7CPremiumMCSess%2C%2C-1%7CSLMCSess%2C%2C-1%7CCrisisSess%2C%2C-1%7CUVOwnersSess%2C%2C-1%7CRestPremRSess%2C%2C-1%7CRepTarMCSess%2C%2C-1%7CCCSess%2C%2C-1%7CCYLSess%2C%2C-1%7CPremRetPers%2C%2C-1%7CViatorMCPers%2C%2C-1%7Csesssticker%2C%2C-1%7CPremiumORSess%2C%2C-1%7Ct4b-sc%2C%2C-1%7CRestAdsPers%2C%2C-1%7CMC_IB_UPSELL_IB_LOGOS2%2C%2C-1%7CTSMCPers%2C%2C-1%7Cb2bmcpers%2C%2C-1%7CPremMCBtmSess%2C%2C-1%7CMC_IB_UPSELL_IB_LOGOS%2C%2C-1%7CLaFourchette+Banners%2C%2C-1%7Csess_rev%2C%2C-1%7Csessamex%2C%2C-1%7CPremiumRRSess%2C%2C-1%7CTADORSess%2C%2C-1%7CAdsRetPers%2C%2C-1%7CCOVIDMCSess%2C%2C-1%7CListMCSess%2C%2C-1%7CTARSWBPers%2C%2C-1%7CSPMCSess%2C%2C-1%7CTheForkORSess%2C%2C-1%7CTheForkRRSess%2C%2C-1%7Cpers_rev%2C%2C-1%7CSPACMCSess%2C%2C-1%7CRBAPers%2C%2C-1%7CRestAds%2FRSess%2C%2C-1%7CHomeAPers%2C%2C-1%7CPremiumMobPers%2C%2C-1%7CRCSess%2C%2C-1%7CLaFourchette+MC+Banners%2C%2C-1%7CRestAdsCCSess%2C%2C-1%7CRestPremRPers%2C%2C-1%7CSLMCPers%2C%2C-1%7CRevHubRMPers%2C%2C-1%7CUVOwnersPers%2C%2C-1%7Csh%2C%2C-1%7Cpssamex%2C%2C-1%7CTheForkMCCSess%2C%2C-1%7CCrisisPers%2C%2C-1%7CCYLPers%2C%2C-1%7CCCPers%2C%2C-1%7CRepTarMCPers%2C%2C-1%7Cb2bmcsess%2C%2C-1%7CTSMCSess%2C%2C-1%7CSPMCPers%2C%2C-1%7CRevHubRMSess%2C%2C-1%7CPremRetSess%2C%2C-1%7CViatorMCSess%2C%2C-1%7CPremiumMCPers%2C%2C-1%7CAdsRetSess%2C%2C-1%7CPremiumRRPers%2C%2C-1%7CCOVIDMCPers%2C%2C-1%7CRestAdsCCPers%2C%2C-1%7CTADORPers%2C%2C-1%7CSPACMCPers%2C%2C-1%7CTheForkORPers%2C%2C-1%7CPremMCBtmPers%2C%2C-1%7CTheForkRRPers%2C%2C-1%7CTARSWBSess%2C%2C-1%7CPremiumORPers%2C%2C-1%7CRestAdsSess%2C%2C-1%7CRBASess%2C%2C-1%7CSPORPers%2C%2C-1%7Cperssticker%2C%2C-1%7CListMCPers%2C%2C-1%7C',
-    'TASID': '7682DE49FA54483787C23F8149E415AB',
-    'roybatty': 'TNI1625!AJ%2Bk8EpFNasZlVx%2BbDIxee4q%2FLHBH1Ym2XSJycam%2Bsgo%2FbO5UkEdmevivoHUz6dqRSMXz5YSL%2BR7P8RgFA0h1ISZBYWPELuSd9a0rxaN56WDaAbfditc2FKFmO3vpE%2FE3aQxKwhdZdLUApFIXrc73zypNfWwWEwOfW5IRGuO%2BbqD%2C1',
 }
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-    'Accept-Language': 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3',
-    'Connection': 'keep-alive',
-    'Upgrade-Insecure-Requests': '1',
-    'Sec-Fetch-Dest': 'document',
-    'Sec-Fetch-Mode': 'navigate',
-    'Sec-Fetch-Site': 'none',
-    'Sec-Fetch-User': '?1',
-    'Cache-Control': 'max-age=0',
-    'TE': 'trailers',
 }
 
 
